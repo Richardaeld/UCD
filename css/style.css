@@ -5,7 +5,7 @@
 }
 body {
   
-   background-color: rgb(87, 86, 83);
+   /*background-color: rgb(87, 86, 83); */
     height: 140vh;
    
     background: url("../photo/first.jpg") no-repeat center center fixed;
@@ -13,14 +13,22 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    /*background-color: rgba(0,0,0,.25);*/
     display:flex;
     align-items: center;
     justify-content: center;
 
     position: relative;
+}
 
 
+.dimmer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.25);
 }
 
 /* Altering  nav bar  */
@@ -45,38 +53,36 @@ body {
     width: 100%;
     background-color: rgba(0,0,0,.25);
     color: #ffffff;
-    
-    
 }
 
-}
 .navbar .navbar-toggler {
     border:0;
 }
 
-.header div nav {
-   background-color: rgb(87, 86, 83);
-}
-
-hr {
-    margin: 0;
-}
-.header {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.header div {
-    padding: 0;
-}
-
-
 .callout {
-   /*position: relative;*/
     padding-top: 5px;
-    /*background-color: black;*/
+    color: #ffffff;
 }
+
+.callout p {
+    top: -50px;
+    text-align: center;
+}
+
+.callout .callout-pad {
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+/*
+.space {
+    padding: 13% 0;
+    margin: 13% 0;
+}
+*/
+/* above should be needed !! bottom is questionable */
+
+
 
 .callout div {
     text-align: center;
@@ -84,12 +90,8 @@ hr {
    /* position: absolute; */
     color: #ffffff;
     /*background-color:rgba(90, 90, 90, .5);*/
-    top: -25%;
+    top: -35%;
     max-height: 120px;
-}
-
-.callout div p {
-    color: #ffffff;
 }
 
 
@@ -98,42 +100,28 @@ hr {
     border-radius: 50%;
 
 }
-/*
-.callout-container {
-    height: 100vh;
-   
-    background: url("../photo/first.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-    display:flex;
-    align-items: center;
-    justify-content: center;
 
-    position: relative;
-}
-*/
+
+
+
 .job-apply {
     text-align: center;
+    color: #ffffff;
 }
+
+
 
 .moto {
     text-align: center;
 }
 
-
 .networks {
     text-align: center;
     left: 0;
     width: 100%;
-    
     margin: 0px;
     bottom: 0;
     position: fixed;
-   /* align-items: bottom;*/
-    background-color: transparent;
     color: #ffffff;
     font-size: 150%;
     z-index: 1;
@@ -153,13 +141,17 @@ hr {
 }
 
 footer ul li {
-    text-decoration: none;
-    background: transparent;
-    z-index: 1;
     padding: 25px;
-    color: red;
 }
 
 footer ul {
     list-style-type: none;
 }
+
+/* New and chacked as progression */
+
+hr {
+    width: 50%;
+    border: 3px solid rgb(87, 86, 83);
+}
+
