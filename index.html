@@ -18,9 +18,10 @@
 
 <body>
 
-	<article>
-		<!-- Nav  -->
-		<div class="container-fluid navalert-container">
+
+	<!-- Nav  -->
+	<div class="dimmer-overlay">
+		<div class="container-fluid navalert-container hero-img">
 			<nav class="navbar navbar-dark navbar-expand-sm">
 				<a href="/" class="navbar-brand name">
 					<h3> Richard Eldridge</h3>
@@ -40,75 +41,100 @@
 				</div>
 			</nav>
 		</div>
+	</div>
 
 
-		<!--  call out (picture and position) -->
-		<div class="container-fluid">
-			<div class="row callout">
-				<div class="col-12 callout-pad">
-				</div>
-				<div class="col-12">
-					<p> <img src="photo/Id.jpg" alt="Profile picture of Richard E."></p>
-				</div>
-				<div class="col-1"></div>
-				<p class="col-10"> Full-Stack Software Engineer</p>
-				<div class="col-1">
-				</div>
+	<!--  call out (picture and position) -->
+	<div class="container">
+		<div class="row callout">
+			<div class="col-12 callout-pad">
+			</div>
+			<div class="col-12">
+				<p> <img src="photo/Id.jpg" alt="Profile picture of Richard E."></p>
+			</div>
+			<div class="col-1 col-sm-3"></div>
+			<p class="col-10 col-sm-6 " id="subhero-text"> Full-Stack Software Engineer</p>
+			<div class="col-1 col-sm-3">
 			</div>
 		</div>
+	</div>
+
+	<!-- Motal - with skills -->
+    <div class="container">
+		<div class="row">
+			<div class="col-12 modal-center">
+				<div class="modal fade" id="my-Modal">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+                            <h1>Skills:</h1>
+							</div>
+							<div class="modal-body">
+                            
+                            
+                            <!--  revise text size  -->
+
+
+                            <p><h4>Front end:</h4> HTML5 CSS3 JavaScript</p>
+                            <p><h4>Back end:</h4> MySQL Python3 Flask</p>
+                            <p><h4>Interactive data visulation:</h4> through MongoDB and deploying using D3.js and DC.js</p>
+                            <p><h4>back end construction:</h4> through Django framework and front end intergration using Angular</p>
+                            <p><h4>Respository Profriciency:</h4> Github and Heroku</p>
+
+
+							</div>
+							<div class="modal-footer">
+							<input class="btn btn-success" data-dismiss="modal" value="Close">
+		                    </div>
+						</div>
+                    </div>					
+                </div>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#my-Modal"> <h5>Experience with:</h5></a>
+            </div>				
+        </div>
+    </div>			
+		    
+
+
+						<!--  moto/personal info  -->
+						<section>
+							<div class="container moto">
+								<h3>Only clean, sleek, and efficient designs</h3>
+							</div>
+						</section>
+
+						<!--  social footer  -->
+						<footer>
+							<div class="container">
+								<div class="row">
+									<ul class="networks row">
+										<li class="col-4"><a href="https://github.com" target="_blank">
+												<i class="fab fa-github-square"></i> </a></li>
+										<li class="col-4"><a
+												href="https://www.linkedin.com/in/richard-eldridge-4200221ab/"
+												target="_blank"> <i class="fab fa-linkedin"></i> </a></li>
+										<li class="col-4"><a href="https://slack.com/" target="_blank">
+												<i class="fab fa-slack"></i>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</footer>
 
 
 
-		<!-- Skills -->
-		<section>
-			<div class="container job-apply">
-				<div class="row">
-					<h1 class="col-12">Experience with:</h1>
-					<p class="col-12">Front end: HTML5 CSS3 JavaScript</p>
-					<p class="col-12">Back end: MySQL Python3 Flask</p>
-					<p class="col-12">Experience making interactive data visulation by loading data though MongoDB and
-						deploying using D3.js and DC.js </p>
-					<p class="col-12">Able to create full-stack website using Django framework on the backend and
-						intergrate front end using Angular</p>
-					<p class="col-12">Profricient with Github and Heroku online respositories</p>
-					<p class="col-12"><button class="btn btn-sm btn-success">Portfolio</button></p>
-				</div>
-			</div>
-		</section>
-
-		<!--  moto/personal info  -->
-		<section>
-			<div class="container moto">
-				<h1>moto</h1>
-			</div>
-		</section>
-
-		<!--  social footer  -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<ul class="networks row">
-						<li class="col-4"><a href="https://github.com" target="_blank">
-								<i class="fab fa-github-square"></i> </a></li>
-						<li class="col-4"><a href="https://www.linkedin.com/in/richard-eldridge-4200221ab/"
-								target="_blank"> <i class="fab fa-linkedin"></i> </a></li>
-						<li class="col-4"><a href="https://slack.com/" target="_blank"> <i class="fab fa-slack"></i>
-							</a>
-					</ul>
-
-		</footer>
-
-	</article>
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
+						<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+							integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+							crossorigin="anonymous">
+						</script>
+						<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+							integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+							crossorigin="anonymous">
+						</script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+							integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+							crossorigin="anonymous">
+						</script>
 
 
 </body>

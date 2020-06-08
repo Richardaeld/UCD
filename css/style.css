@@ -3,10 +3,11 @@
     padding: 0;
     border: 0;
 }
+
 body {
   
-   /*background-color: rgb(87, 86, 83); */
-    height: 140vh;
+   background-color: rgb(87, 86, 83); 
+    height: 100vh;
    
     background: url("../photo/first.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -19,8 +20,9 @@ body {
     justify-content: center;
 
     position: relative;
-}
 
+    display: block;
+}
 
 .dimmer-overlay {
     position: absolute;
@@ -28,7 +30,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,.25);
+    background: rgba(0,0,0,.5);
 }
 
 /* Altering  nav bar  */
@@ -70,16 +72,11 @@ body {
 }
 
 .callout .callout-pad {
-    padding: 20px 0;
-    margin: 20px 0;
+    padding: 40px 0;
+    margin: 40px 0;
 }
 
-/*
-.space {
-    padding: 13% 0;
-    margin: 13% 0;
-}
-*/
+
 /* above should be needed !! bottom is questionable */
 
 
@@ -101,19 +98,11 @@ body {
 
 }
 
-
-
-
 .job-apply {
     text-align: center;
     color: #ffffff;
 }
 
-
-
-.moto {
-    text-align: center;
-}
 
 .networks {
     text-align: center;
@@ -125,7 +114,7 @@ body {
     color: #ffffff;
     font-size: 150%;
     z-index: 1;
-    background-color: rgba(0,0,0,.25);
+    background-color: rgba(0,0,0,.5);
 }
 
 .networks li {
@@ -155,3 +144,21 @@ hr {
     border: 3px solid rgb(87, 86, 83);
 }
 
+#subhero-text{
+    background-color: rgba(0,0,0,.5);
+    width:284px;
+}
+
+#front-end {
+    
+}
+
+.modal-center {
+    text-align: center;
+}
+
+.moto {
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
